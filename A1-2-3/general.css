@@ -1,0 +1,173 @@
+/*-----------------------------Color-----------------------*/
+/*-----------------------------General---------------------*/
+/*----------------------------Layout-----------------------*/
+/*-----------------------------Navega----------------------*/
+
+/*----------------Color---------------------*/
+
+.primero { color: #5C4B51; }
+.segundo { color: #8CBEB2; }
+.tercero { color: #F2EBBF; }
+.cuarto { color: #F3B562; }
+.quinto { color: #F06060; }
+
+
+
+/*----------------General---------------------*/
+* {
+    box-sizing: border-box;
+}
+
+#principal {
+    margin: auto;
+    width: 1400px;
+    border: solid black;
+    background-color: #F2EBBF;
+    overflow: auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+img {
+
+    width: 100%;
+}
+h1 {
+    font-size: 70px;
+    padding: 90px;
+    color:#F2EBBF;;
+    text-align: center;
+}
+
+h2 {
+
+    font-size: 30px;
+    border: solid #5C4B51 5px;
+    padding: 5px;
+    background-color: #F06060;
+}
+
+
+/*----------------Layout---------------------*/
+
+#logo {
+    background-image: url(Img/animalespastando.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px
+}
+#conocenos {
+    text-align: center;
+    padding: 40px;
+    background-color:#F3B562;
+}
+figure {
+    background:  #F3B562;
+
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    margin: 5%;
+}
+#contendio-central{
+    float: left;
+    width: 75%;
+    background-color:#8CBEB2;
+}
+
+#barra-lateral {
+    float: right;
+    width: 25%;
+    background-color: #F3B562;
+}
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+.fila::after {
+    clear: both;
+    display: block;
+content: ''; 
+}
+
+.cien {
+        width: 100%;
+    
+}
+
+.columna-cien {
+    margin: 5px;
+}
+.img {
+    float: right;
+    
+}
+
+.box {
+    float: right;
+    border-radius: 10px;
+    border: solid  #5C4B51 5px;
+}
+.box-left {
+    float: left;
+    margin-right: 30px;
+  width: 300px;
+  border-radius: 10px;
+  border: solid  #5C4B51 5px;
+    
+}
+/*----------------Navega---------------------*/
+
+.menu li {
+    position: relative;
+    display: inline;
+}
+
+.submenu {
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.menu a:hover {
+    background-color: #F3B562;
+
+}
+
+.submenu a:hover {
+    background-color: #F06060;
+}
+
+.menu a:focus {
+    outline: solid  #F06060 8px;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+}
+
+.menu.submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    background-color: #F06060;
+    color: black;
+    border: solid #5C4B51 5px;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+
+}
+
+
+

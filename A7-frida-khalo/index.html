@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida Khalo</title>
+    <link rel="stylesheet" href="frida.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Andika:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="principal">
+        <nav class="fila" id="navega">
+            <div
+                class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl">
+                <ul>
+                    <li id="hamburguesa"> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a></li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#biografia">Biografia</a></li>
+                    <li><a href="#obra">Obra</a></li>
+                    <li><a href="#feminismo">Feminismo</a></li>
+                    <li><a href="#circulo-cercano">Circulo cercano</a></li>
+                    <li><a href="#muerte">Muerte</a></li>
+                    <li><a href="#mito-y-leyenda">Mito y leyenda</a></li>
+                    <li><a href="#legado">Legado</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><a href="#actualidad">Actualidad</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="fila " id="cabecera">
+            <div
+                class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl">
+                <h1>Frida Khalo</h1>
+            </div>
+        </div>
+        <div class="fila" id="sobre-mi">
+            <div class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl"
+                id="frase">
+                <h2>El arte más poderoso de la vida es hacer del dolor un talismán que cura, una mariposa que renace
+                    florecida en fiesta de colores</h2>
+            </div>
+            <div class="fila">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h2>Sobre mi</h2>
+                    <p>Su nombre completo es Magdalena Carmen Frida Kahlo Calderón, fue una artista mexicana nacida en
+                        1907 y fallecida en 1954. Tuvo una vida difícil,
+                        marcada por la enfermedad y el dolor físico. A los 18 años, sufrió un grave accidente de autobús
+                        que
+                        la dejó con lesiones permanentes en la columna vertebral y en otras partes del cuerpo. Durante
+                        su
+                        recuperación, comenzó a pintar, y se convirtió en una de las artistas más importantes del siglo
+                        XX.
+                    </p>
+                    <p>Es conocida por sus pinturas únicas y emotivas, que se caracterizan por su estilo surrealista y
+                        su
+                        uso de colores vibrantes y llenas de simbolismo para representar su vida personal y su identidad
+                        mexicana. Que a menudo presentan autorretratos y elementos de su vida personal y cultural. Su
+                        obra
+                        ha sido objeto de numerosas exposiciones y análisis críticos, y su legado sigue inspirando a
+                        muchos
+                        artistas y activistas en todo el mundo.</p>
+                    <p>Además de su arte, Frida Kahlo también es recordada por su activismo político y su defensa de los
+                        derechos de las mujeres y las minorías culturales. Fue una figura clave en el movimiento
+                        artístico y
+                        político conocido como el "muralismo mexicano" y se convirtió en un icono feminista y de la
+                        cultura
+                        popular en todo el mundo. </p>
+                </div>
+                <div class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl"
+                    id="foto-ella">
+                    <img src="Img/en-la-pared.jpeg" alt="frida-en-la-pared">
+                </div>
+            </div>
+        </div>
+        <div class="fila" id="biografia">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>Enamórate de ti. De la vida. Y luego de quien tú quieras</h2>
+            </div>
+            <div class="fila" id="primeros-años">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <img src="Img/fridapequeña.jpeg" alt="">
+                </div>
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h3>Primeros años (1910-1925)</h3>
+                    <div>
+                        <p>Nació en 1907 en Coyoacán, México. A los seis años contrajo polio, lo que afectó su
+                            pierna
+                            derecha y la dejó con una cojera permanente. </p>
+                        <p>Estudió en la Escuela Nacional Preparatoria de la
+                            Ciudad de México, donde se relacionó con un grupo de jóvenes intelectuales y políticos.
+                        </p>
+                        <p>En 1925, sufrió
+                            un grave accidente de autobús que la dejó con múltiples fracturas en la columna
+                            vertebral, las
+                            costillas, la pelvis y la pierna derecha. Durante su recuperación, comenzó a pintar y su
+                            arte se
+                            convirtió en una forma de escapar del dolor físico y emocional que experimentaba.</p>
+                        <p>La obra temprana de
+                            Kahlo se centraba en autorretratos y presentaba elementos del folclore y la cultura
+                            mexicana. A
+                            partir
+                            de entonces, comenzó a definir su estilo único y su enfoque en el arte autobiográfico,
+                            lo que la
+                            convirtió en una figura importante en la historia del arte latinoamericano.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila" id="Accidente">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h3>Accidente e inicio de su pintura (1925-1928)</h3>
+                    <div>
+                        <p>En 1925, Frida Kahlo sufrió un grave accidente de autobús que la dejó con múltiples fracturas
+                            en
+                            la
+                            columna vertebral, las costillas, la pelvis y la pierna derecha.</p>
+                        <p>Durante su recuperación, Kahlo
+                            comenzó a pintar y su arte se convirtió en una forma de escapar del dolor físico y emocional
+                            que
+                            experimentaba. Su obra temprana se centraba en autorretratos y presentaba elementos del
+                            folclore
+                            y
+                            la cultura mexicana. </p>
+                        <p>El arte de Kahlo se
+                            convirtió en una expresión de su dolor físico y emocional, y su vida personal y política
+                            tuvo un
+                            impacto significativo en su trabajo. A pesar de sufrir una serie de problemas de salud y
+                            enfrentar
+                            desafíos personales y profesionales, Frida Kahlo se convirtió en una de las artistas más
+                            importantes
+                            del siglo XX y una figura destacada en la historia del arte latinoamericano.</p>
+                    </div>
+                </div>
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <img src="Img/fridaaccidente.jpeg" alt="">
+                </div>
+            </div>
+            <div class="fila" id="matrimonio">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h3>Primer matrimonio con Diego Rivera (1929-1939)</h3>
+                    <img src="Img/fridaboda.jpeg" alt="">
+                </div>
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <p> Frida Kahlo se casó con el famoso muralista Diego Rivera en 1929, comenzando así una
+                        relación
+                        tumultuosa y apasionada que duró hasta su divorcio en 1939.</p>
+                    <p> Durante este tiempo, Kahlo y Rivera se
+                        involucraron en el mundo del arte y la política de México, y ambos tuvieron una gran
+                        influencia en
+                        la obra del otro.</p>
+                    <p>Frida Kahlo y Diego Rivera tuvieron aventuras extramaritales y lucharon con
+                        problemas de salud mental y física, incluyendo los abortos espontáneos que sufrió Kahlo y
+                        los
+                        problemas de adicción de Rivera.</p>
+                    <p> A pesar de los desafíos, la relación de Kahlo y Rivera fue una
+                        fuente de inspiración mutua y ambos tuvieron un impacto significativo en la historia del
+                        arte
+                        mexicano y latinoamericano.</p>
+                </div>
+            </div>
+            <div class="fila" id="EEUU">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h3>Residencia en Estados Unidos (1931-1934)</h3>
+                    <div>
+                        <p>Frida Kahlo y Diego Rivera vivieron en los Estados Unidos de 1931 a 1934, mientras Rivera
+                            trabajaba en varios proyectos de muralismo en San Francisco, Nueva York y Detroit.</p>
+                        <p>Durante este
+                            tiempo, Frida Kahlo comenzó a desarrollar su propio estilo artístico y se interesó por la
+                            cultura estadounidense y la política.</p>
+                        <p>También enfrentó problemas de salud y se sometió a varias
+                            cirugías en la columna vertebral.</p>
+                        <p>La experiencia de Kahlo en los Estados Unidos influyó en su
+                            obra, que comenzó a presentar elementos más surrealistas y políticos, y reflejaba su dolor
+                            físico y emocional.</p>
+                        <p>Aunque Kahlo y Rivera tuvieron dificultades durante su estadía en los
+                            Estados Unidos, su tiempo allí fue una experiencia formativa en sus carreras artísticas y en
+                            su
+                            relación personal.</p>
+                    </div>
+                </div>
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <img src="Img/fridaeeuu.jpeg" alt="">
+                </div>
+            </div>
+            <div class="fila" id="primeras-exposiciones-vida-politica">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h3>Primeras exposiciones (1935-1939)</h3>
+                    <p>Durante el periodo de 1935 a 1939, Frida Kahlo tuvo sus primeras exposiciones individuales de su
+                        obra
+                        en México y en el extranjero.</p>
+                    <p>En 1938, tuvo una importante exposición individual en la Ciudad de
+                        Nueva York, donde su obra fue muy bien recibida y admirada por la crítica especializada.</p>
+                    <p> A través de
+                        sus exposiciones, Frida Kahlo comenzó a ganar reconocimiento como una artista importante y
+                        original,
+                        y sus obras comenzaron a ser adquiridas por importantes museos de arte en todo el mundo.</p>
+                    <p> Sus obras
+                        exploraban temas como la identidad, el dolor y la angustia, y estaban influidas por su propia
+                        experiencia personal y su cultura mexicana.</p>
+                </div>
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h3>Vida política </h3>
+                    <p> Tuvo una vida política activa y apasionada, comprometida con las causas sociales y políticas de
+                        su tiempo.</p>
+                    <p> Ella abrazó el movimiento comunista y luchó por la justicia social y los derechos de
+                        los trabajadores.</p>
+                    <p> Kahlo también se involucró en el movimiento feminista y trabajó para mejorar
+                        las condiciones de vida y trabajo de las mujeres.</p>
+                    <p> En su obra artística, Kahlo exploró temas
+                        políticos y sociales, y utilizó su arte como una herramienta para expresar sus opiniones y
+                        protestar contra la opresión.</p>
+                    <p>Aunque enfrentó desafíos y críticas por su activismo político,
+                        Frida Kahlo sigue siendo reconocida por su compromiso con la justicia social y su defensa de los
+                        derechos humanos.</p>
+                </div>
+            </div>
+            <div class="fila" id="reconocimiento-artistico-ultimos-años">
+                <div class="col-3-movil col-3-tablet-vertical col-3-tablet-horizontal col-6-escritorio col-6-escritorio-xl"
+                    id="caja">
+                    <h3>Reconocimiento artístico (1939-1949)</h3>
+                    <p>Durante la década de 1940, la salud de Frida Kahlo empeoró, lo que limitó su capacidad para crear
+                        arte y
+                        participar activamente en la escena artística.</p>
+                    <p> Sin embargo, su trabajo continuó recibiendo
+                        reconocimiento y admiración por parte de la crítica y del público. Kahlo fue invitada a
+                        exposiciones
+                        importantes en Nueva York y México, y su obra se convirtió en un símbolo de la cultura mexicana
+                        y
+                        del
+                        movimiento feminista.</p>
+                    <p> Aunque nunca alcanzó la fama y el reconocimiento que sí obtuvo su esposo Diego
+                        Rivera, su obra sigue siendo celebrada y reconocida en todo el mundo por su originalidad,
+                        creatividad y
+                        su forma única de expresar su vida y su sufrimiento personal. </p>
+                </div>
+                <div class="col-3-movil col-3-tablet-vertical col-3-tablet-horizontal col-6-escritorio col-6-escritorio-xl"
+                    id="caja">
+                    <h3>Últimos años (1950-1954)</h3>
+                    <p>En la década de 1950, la salud de Frida Kahlo empeoró, pero continuó trabajando en su obra
+                        mientras
+                        estaba postrada en cama y utilizando una silla de ruedas.</p>
+                    <p> En 1953, el Museo de Arte Moderno de Nueva
+                        York organizó una exposición retrospectiva de su obra, y aunque no pudo asistir debido a su mala
+                        salud,
+                        fue un gran éxito.</p>
+                    <p> Frida Kahlo falleció en 1954 a los 47 años de edad, dejando un legado artístico
+                        duradero y siendo recordada como una figura importante en la lucha por la igualdad de género y
+                        los
+                        derechos de las personas con discapacidades. </p>
+                </div>
+            </div>
+        </div>
+        <div class="fila" id="obra">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>Me pinto a mí misma porque soy a quien mejor
+                    conozco</h2>
+            </div>
+            <div class="fila" id="obra-pictorica">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <img src="Img/fridapintando.jpeg" alt="">
+                </div>
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <h2>Obra pictòrica</h2>
+                    <p>La obra pictórica de Frida Kahlo se caracteriza por su estilo surrealista y su intensa
+                        emotividad. Es conocida por sus autorretratos y por la manera en que plasmó sus vivencias,
+                        dolores y emociones en sus cuadros. En su obra, Frida utilizó un estilo colorido y vibrante, con
+                        una mezcla de elementos surrealistas y realistas.</p>
+                    <p>Sus obras suelen estar marcadas por sus experiencias personales, incluyendo su relación con
+                        Diego Rivera, sus problemas de salud y las dificultades políticas y sociales que enfrentaba
+                        México en ese momento. La mayoría de sus cuadros son autorretratos que exploran su dolor físico
+                        y emocional, así como su identidad mexicana y su postura feminista.</p>
+                    <p>Además de su obra pictórica, Frida también creó una serie de autorretratos que la convirtieron
+                        en un icono de la cultura popular y la moda. Su estilo distintivo, con sus cejas pobladas, el
+                        bigote y la ropa tradicional mexicana, la han convertido en un símbolo de la cultura y la
+                        identidad mexicana.</p>
+                    <p>En su obra, Frida utilizó una gran variedad de técnicas y estilos, como la pintura al óleo, la
+                        acuarela, el grabado y el collage. Su legado artístico y cultural sigue siendo una fuente de
+                        inspiración y fascinación para muchos.</p>
+                </div>
+            </div>
+            <div class="fila" id="galeria">
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <div>
+                        <h3>Las dos fridas (1939)</h3>
+                        <p>Es una famosa pintura al óleo creada por la artista mexicana Frida Kahlo en
+                            1939. La obra representa a dos versiones de la propia artista sentadas juntas en un banco:
+                            una
+                            con un vestido blanco y una herida en el corazón, y otra con un vestido tradicional mexicano
+                            y
+                            un corazón intacto.</p>
+                        <p>La pintura se interpreta como una representación de la dualidad de Frida
+                            Kahlo, quien sufrió mucho a lo largo de su vida debido a problemas de salud ya su complicada
+                            relación con su marido, Diego Rivera.</p>
+                        <p> Se considera una obra emblemática del estilo surrealista
+                            que caracterizó gran parte de la obra de Frida Kahlo y ha sido expuesta en numerosos museos
+                            y
+                            galerías de todo el mundo.</p>
+                    </div>
+                </div>
+                <div
+                    class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                    <img src="Img/lasdosfridas800px.jpeg">
+                </div>
+                <div class="fila">
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <h3>Autorretrato con collar de espinas y colibrí (1940)</h3>
+                        <p>Es una pintura al óleo, representa a la propia artista como si estuviera sentada frente a un
+                            espejo, con un collar de espinas
+                            clavado en su cuello y un colibrí suspendido en el aire en frente de ella.</p>
+                        <p>La pintura ha sido
+                            interpretada de diversas maneras, pero se cree que representa el dolor y el sufrimiento que
+                            Frida Kahlo experimentó a lo largo de su vida, tanto física como emocionalmente.</p>
+                        <p>El collar de
+                            espinas se ha interpretado como un símbolo de la tortura y el sufrimiento, mientras que el
+                            colibrí se cree que representa la vida y la libertad. "</p>
+                    </div>
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <img src="Img/collardeespinas.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div
+                        class="col-3-movil col-3-tablet-vertical col-3-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <h3>Henry Ford hospital (1932)</h3>
+                        <p>La obra "Henry Ford Hospital" de Frida Kahlo es un autorretrato en el que la artista se
+                            representa a sí misma acostada en una cama rodeada de elementos simbólicos que representan
+                            su
+                            dolor y sufrimiento físico y emocional.</p>
+                        <p>La pintura incluye elementos como un feto, un hombre
+                            desnudo que representa a su esposo, Diego Rivera, y un colibrí que simboliza la vida y la
+                            muerte. Además, la imagen de la pelvis abierta de Frida sugiere su dolor físico y su
+                            discapacidad para tener hijos.</p>
+                        <p>La obra es una exploración personal y profundamente emotiva de la
+                            experiencia de ser mujer, y es considerada una de las obras maestras de Kahlo.</p>
+                    </div>
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <img src="Img/aborto.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <h3>Arbol de la esperanza (1946)</h3>
+                        <p>En este cuadro vemos a dos Fridas; la que está a la izquierda es la Frida que acaba de salir
+                            del
+                            quirófano en una camilla y la otra es la figura de una Frida poderosa, derecha y llena de
+                            confianza.</p>
+                        <p>El cuadro está dividido en dos mitades, una de día y la otra de noche. El cuerpo
+                            magullado y sangrante está asignado al sol, que en la mitología azteca se alimenta de la
+                            sangre
+                            humana de los sacrificios. Las dos heridas en su espalda tienen eco en las fisuras del
+                            paisaje
+                            desolado que se ve detrás.</p>
+                        <p>La otra Frida, que parece fuerte y optimista esta asignada a la luna,
+                            símbolo de la feminidad. En su mano, sostiene el corsé que ella "espera" de abandonar para
+                            siempre después de la cirugía. Desgraciadamente, esta cirugía falló estrepitosamente y
+                            resultó
+                            en numerosas complicaciones. Ha sido descrita como "el principio del fin" para Frida.</p>
+                    </div>
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <img src="Img/arbolesperanza.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <h3>Viva la vida (1954)</h3>
+                        <p>Es una obra maestra creada por la artista mexicana Frida Kahlo en 1954. La pintura
+                            está llena de elementos simbólicos de la cultura mexicana, como frutas, flores, animales y
+                            objetos tradicionales, y representa a Frida rodeada de estos objetos mientras Celebra la
+                            vida y
+                            la cultura mexicana.</p>
+                        <p> Aunque la obra es vista como una celebración de la vida, también se interpreta como una
+                            exploración del tema de la muerte, que fue un tema recurrente en la obra de Kahlo. La
+                            pintura es
+                            considerada una de las más famosas y queridas de la artista y ha sido objeto de numerosas
+                            exposiciones y reconocida como una de las obras más importantes del arte latinoamericano.
+                        </p>
+
+                    </div>
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <img src="Img/vivalavida.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <h3>La columna rota (1944)</h3>
+                        <p>Es un autorretrato que representa su dolor
+                            físico y emocional después de sufrir un grave accidente de autobús en su juventud. La
+                            pintura presenta a Kahlo desnuda, con la columna vertebral abierta y clavos que atraviesan
+                            su
+                            cuerpo, y sangre que fluye desde las heridas. </p>
+                        <p> Además, la obra incluye otros símbolos como lágrimas,
+                            mariposas y un paisaje de fondo que muestra una tormenta eléctrica.</p>
+                        <p>En general, la pintura es una representación emotiva y simbólica del dolor y la
+                            vulnerabilidad humana, y es considerada
+                            una de las obras más importantes y poderosas de Kahlo.</p>
+
+                    </div>
+                    <div
+                        class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                        <img src="Img/columnarota.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila" id="feminismo">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>El mundo es de quien nace para conquistarlo y no de quien sueña que puede conquistarlo</h2>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <img src="Img/frida700px.jpeg" alt="">
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h2>Feminismo</h2>
+                <p>Frida Kahlo es considerada por muchos como una figura importante del feminismo debido a la forma en
+                    que representó la identidad femenina en su arte y su vida personal.</p>
+                <p> En una sociedad en la que el
+                    papel de la mujer estaba supeditado al del hombre, Frida se mostró autosuficiente y fuerte,
+                    rechazando la visión tradicional de lo femenino dibujada desde el mundo masculino.</p>
+
+                <p> Fue una de las primeras artistas en expresar la identidad femenina desde su propia óptica, y su arte
+                    a menudo presenta temas relacionados con la experiencia de la mujer, como el dolor, la maternidad y
+                    la sexualidad. </p>
+                <p> Además, Frida fue una figura importante en el círculo artístico y político de la
+                    época, y defendió activamente los derechos de las mujeres y las minorías.</p>
+
+                <p> En la actualidad, su vida y obra siguen siendo un símbolo de la lucha feminista y la reivindicación
+                    de la igualdad de género.</p>
+
+
+            </div>
+        </div>
+        <div class="fila" id="circulo-cercano">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2> Escoge una persona que te mire como si quizás fueras magia</h2>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h2>Circulo cercano</h2>
+                <p>El círculo de Frida Kahlo incluía a varios artistas, intelectuales y activistas políticos de su
+                    época, tanto en México como en el extranjero. Algunos de los miembros más destacados de su círculo
+                    incluyen: </p>
+                <ul>
+                    <li><strong>Guillermo Kahlo</strong>:Padre de Frida y un fotógrafo reconocido en su época. A
+                        pesar de que su relación no siempre fue fácil, Frida lo admiraba profundamente y llegó a
+                        trabajar con él en
+                        varias
+                        ocasiones.</li>
+                    <li><strong>Diego Rivera</strong>: Esposo de Frida y uno de los muralistas más famosos de México.
+                        Su relación fue
+                        tumultuosa, pero su amor mutuo y su compromiso con la política los mantuvieron unidos durante
+                        toda
+                        su vida.</li>
+
+                    <li><strong>Leon Trotsky</strong>: Líder revolucionario ruso que vivió en México durante algún
+                        tiempo después de
+                        ser
+                        exiliado de su país. Frida y Diego eran amigos cercanos de Trotsky y lo alojaron en su casa
+                        durante
+                        un tiempo.</li>
+                    <li><strong>André Breton</strong>: Escritor y poeta francés, conocido por ser uno de los
+                        fundadores del
+                        movimiento
+                        surrealista. Breton visitó a Frida en varias ocasiones y se interesó por su obra, lo que ayudó a
+                        difundirla en Europa.</li>
+                    <li><strong>Tina Modotti</strong> : Fotógrafa y activista política italiana que vivió en México
+                        durante muchos
+                        años. Eran amigas cercanas y trabajaron juntas en varios proyectos políticos y
+                        artísticos.</li>
+                    <li><strong>Lola Álvarez Bravo</strong>: Fotógrafa mexicana y amiga de Frida. Lola documentó la
+                        vida de Frida y
+                        Diego, así como la de otros artistas y activistas de la época.</li>
+                    <li><strong>Carlos Pellicer</strong>: Poeta y escritor mexicano que fue amigo cercano de Frida y
+                        Diego. Pellicer
+                        escribió varios poemas sobre Frida y su arte.</li>
+                    <li><strong>Remedios Varo</strong>: Artista española que vivió en México durante muchos años.
+                        Eran amigas cercanas y trabajaron juntas en varios proyectos artísticos.</li>
+                    <li><strong>Nickolas Muray</strong>: >Fotógrafo húngaro-americano con quien Frida mantuvo una
+                        relación amorosa
+                        en
+                        la década de 1930. Muray también tomó varias fotografías icónicas de Frida, incluyendo una de
+                        las
+                        más famosas en la que ella está acostada en una cama rodeada de flores.</li>
+
+                    <li><strong>David Alfaro Siqueiros</strong>: Muralista mexicano importante, Siqueiros también
+                        fue amigo cercano
+                        de
+                        Frida y Diego. Los tres trabajaron juntos en varios proyectos y compartieron ideas políticas y
+                        artísticas.
+                    </li>
+                    <li><strong>José Clemente Orozco</strong>: Uno de los tres grandes muralistas mexicanos, Orozco fue
+                        una gran
+                        influencia
+                        en el trabajo de Frida y Diego.
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <img src="Img/fridaamigos.jpeg" alt="">
+                <img src="Img/fridaamiga.jpeg" alt="">
+                <img src="Img/frida3amigos.jpeg" alt="">
+            </div>
+        </div>
+        <div class="fila" id="muerte">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2> El hombre es dueño de su destino y su destino es la tierra, y él mismo la está destruyendo hasta
+                    quedarse sin destino</h2>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <img src="Img/funeralfrida.jpeg" alt="">
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h2>Muerte</h2>
+                <p>Frida Kahlo murió el 13 de julio de 1954 en su casa en Coyoacán, México. Fue
+                    encontrada muerta en su cama por su enfermera, y la causa oficial de su muerte fue una embolia
+                    pulmonar. Sin embargo, algunos expertos sugieren que también pudo haber sufrido de una sobredosis
+                    accidental de medicamentos debido a la gran cantidad de analgésicos que tomaba para aliviar su dolor
+                    crónico.</p>
+
+                <p>Su muerte fue un momento de gran tristeza y controversia en México. Kahlo había sido una figura
+                    icónica en la cultura y la política mexicanas, y muchos la consideraban un símbolo de la lucha
+                    contra la opresión y la injusticia.</p>
+
+                <p>El velatorio de Frida Kahlo fue un evento muy concurrido que tuvo lugar en el Palacio de Bellas
+                    Artes de la Ciudad de México el 14 de julio de 1954, donde una multitud de personas acudieron a
+                    despedirla. Su ataúd fue cubierto con la bandera del Partido Comunista Mexicano, lo que generó
+                    críticas de la prensa nacional conservadora.</p>
+
+                <p>Después de su velatorio, su cuerpo fue cremado en el Crematorio Civil de Dolores, y sus cenizas se
+                    encuentran en la Casa Azul, su hogar y lugar de nacimiento. La casa fue convertida en el Museo Frida
+                    Kahlo en 1958, y hoy en día es uno de los museos más populares y visitados de la Ciudad de México.
+                </p>
+
+                <p>En resumen, la muerte de Frida Kahlo fue un momento trágico para sus seguidores y admiradores, pero
+                    su legado y su obra artística siguen siendo una fuente de inspiración y fascinación para muchas
+                    personas en todo el mundo.
+                </p>
+                <p>El legado artístico de Frida Kahlo ha trascendido su muerte, convirtiéndose en una figura icónica
+                    del arte mexicano y en una inspiración para artistas de todo el mundo. </p>
+            </div>
+        </div>
+        <div class="fila" id="mito-y-leyenda">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>Pies,¿para qué los quiero si tengo alas para volar?</h2>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h2>Mito y leyenda</h2>
+                <p>Frida ha sido objeto de mitificación y leyenda desde su época, tanto por su obra pictórica como
+                    por su vida personal.Lo forjó con la creación de su propio personaje
+                    que aparece en la mayoría de sus pinturas.</p>
+                <p> Era transgresora en muchas de las normas y convenciones
+                    de su tiempo, y decidió ser la protagonista de sus pinturas en lugar de realizar un trabajo más
+                    convencional, como se esperaba de las mujeres de su época.</p>
+                <p>Se mostró en sus pinturas coexistiendo tanto con la vida como con la muerte, especialmente en
+                    sus frecuentes operaciones quirúrgicas, siendo constante la presencia de su dolor.También se muestra
+                    como productora de vida
+                    y energía, o como fuente de amor y de sentimientos.El tema de las relaciones y el afecto aparece
+                    frecuentemente en su obra, especialmente su gran amor Diego.</p>
+                <p> Su mensaje sigue manteniendo toda su vigencia como un grito de denuncia contra la opresión, y su
+                    obra se ha convertido en un icono cultural y político.Es una figura muy admirada por su capacidad
+                    de superación y por su lucha por la igualdad y la justicia social.</p>
+                <p> En resumen, Frida Kahlo es un
+                    ejemplo de cómo la creatividad, la valentía y la originalidad pueden cambiar la forma en que se ven
+                    las cosas y pueden inspirar a las generaciones futuras. </p>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <img src="Img/fridasentada.jpeg" alt="">
+            </div>
+        </div>
+        <div class="fila" id="legado">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>Pensaron que iba a morirme. Pero sobreviví, y eso es lo que hago siempre: sobrevivir.</h2>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <img src="Img/fridacasa.jpg" alt="">
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h2>Legado</h2>
+                <p>En la foto, Frida posa en La casa Azul</p>
+                <p>La Casa Azul, también conocida como Museo Frida Kahlo, es uno de los legados más importantes de la
+                    artista. Se trata de la casa donde nació, creció y vivió gran parte de su vida Frida Kahlo, y que
+                    posteriormente se convirtió en un museo dedicado a su obra y vida. La casa se encuentra en la Ciudad
+                    de México, en el barrio de Coyoacán, y ha sido conservada en su estado original, con numerosas obras
+                    de arte y objetos personales de la artista. </p>
+                <p> Además, la Galería de arte Frida Kahlo en Culiacán, Sinaloa, también es un importante legado de la
+                    artista, ya que se ha convertido en un espacio de promoción y difusión de las artes en México y ha
+                    organizado importantes exposiciones y actividades culturales.</p>
+            </div>
+        </div>
+        <div class="fila" id="curiosidades">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>Enamorate de ti, de la vida y luego de quien tú quieras</h2>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h2>Curiosidades</h2>
+                <p> Frida Kahlo tuvo una gran fascinación por los animales, los cuales a menudo aparecen en sus obras
+                    como símbolos y metáforas. Algunos de los animales que se pueden encontrar en sus pinturas y que
+                    eran parte de su vida cotidiana son:</p>
+                <ul>
+                    <li>Monos: Frida tenía varios monos como mascotas y los incluía a menudo en sus pinturas. Para ella,
+                        los
+                        monos representaban la sensualidad y la libertad.</li>
+                    <li>Perros: Frida amaba a los perros y tuvo varios como mascotas, incluyendo un perro llamado "Mr.
+                        Xólotl" que era de raza xoloitzcuintle, una raza de perro mexicana sin pelo. En sus pinturas,
+                        los
+                        perros a menudo representaban la lealtad y la fidelidad.</li>
+                    <li>Colibríes: Frida utilizaba los colibríes como un símbolo de la vida y la muerte, ya que estos
+                        pequeños pájaros representan la fragilidad y la fugacidad de la vida.</li>
+                    <li>Venados: En la cultura mexicana, los venados son un símbolo de la naturaleza y de la conexión
+                        con la
+                        tierra. Frida utilizaba a menudo a los venados en sus pinturas para representar su amor por la
+                        naturaleza y su conexión con la cultura indígena.</li>
+                    <li>Venados: En la cultura mexicana, los venados son un símbolo de la naturaleza y de la conexión
+                        con la
+                        tierra. Frida utilizaba a menudo a los venados en sus pinturas para representar su amor por la
+                        naturaleza y su conexión con la cultura indígena.</li>
+                </ul>
+
+                <p>Otras curiosidades:</p>
+                <ul>
+                    <li>Frida Kahlo se vistió por primera vez con el atuendo típico mexicano (conocido como "tehuana")
+                        en
+                        1929, durante su matrimonio con Diego Rivera. Este estilo de vestir se convirtió en su sello
+                        distintivo y se ha convertido en una parte integral de su imagen y legado.</li>
+                    <li>A pesar de su popularidad, Frida Kahlo solo tuvo dos exposiciones individuales en su vida, ambas
+                        en
+                        la Ciudad de México.</li>
+                    <li>Frida Kahlo tenía una gran colección de objetos prehispánicos y arte popular mexicano en su
+                        casa,
+                        que también funcionaba como estudio y museo.</li>
+                    <li>Frida Kahlo tenía una afición por la fotografía y tomó muchas fotos a lo largo de su vida,
+                        aunque en
+                        su mayoría se han perdido o se desconocen su ubicación.</li>
+                    <li>Frida Kahlo tenía una relación cercana con el poeta y activista comunista ruso León Trotski y su
+                        esposa, quienes vivieron en México durante un tiempo. Kahlo y Trotski mantuvieron
+                        correspondencia y
+                        se reunieron varias veces.
+                    </li>
+                    <li> A pesar de su fama como artista, Frida Kahlo también trabajó como maestra de arte en una
+                        escuela
+                        secundaria de la Ciudad de México durante algunos años.</li>
+                    <li>Frida Kahlo tenía una gran pasión por la jardinería y cultivaba plantas en su casa y jardín. Uno
+                        de
+                        sus cuadros más conocidos, "Viva la Vida", presenta un ramo de flores en primer plano.</li>
+                    <li>Frida Kahlo era una gran amante de la música, y tocaba la guitarra y el piano. Su colección de
+                        discos incluía música tradicional mexicana, ópera y música clásica.</li>
+                    <li>Frida Kahlo pintó alrededor de 200 cuadros a lo largo de su vida, la mayoría de ellos
+                        autorretratos que reflejaban su dolor físico y emocional, así como sus raíces mexicanas y su
+                        identidad femenina.</li>
+                    <li>La obra de Frida Kahlo sólo comenzó a ser reconocida y valorada a nivel internacional después de
+                        su muerte, gracias en gran parte a la labor de su esposo Diego Rivera y de otros artistas y
+                        amigos
+                        que se dedicaron a promover su legado.</li>
+                </ul>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <img src="Img/fridaconperro.jpg" alt="">
+                <img src="Img/fridamono.jpeg" alt="">
+                <img src="Img/fridaciervo.jpeg" alt="">
+            </div>
+        </div>
+        <div class="fila" id="actualidad">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>Dame ilusión, esperanza, ganas de vivir y no me olvides</h2>
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h3>Libros</h3>
+                <p> Estos son solo algunos de los libros más importantes sobre Frida Kahlo, pero hay muchos otros
+                    disponibles en el mercado.</p>
+                <ul>
+                    <li>(El diario de Frida Kahlo: un autorretrato
+                        íntimo): Es una recopilación de los diarios personales de Frida Kahlo, que incluyen sus
+                        pensamientos,
+                        emociones y experiencias personales. El libro es una ventana a la mente de la artista y ofrece
+                        una
+                        perspectiva única de su vida.
+                    </li>
+                    <li> (Frida: una biografía de Frida Kahlo): Escrito por Hayden Herrera,
+                        este libro es una de las biografías más conocidas y completas sobre la vida de Frida Kahlo.
+                        Herrera
+                        explora la vida de la artista desde su infancia hasta su muerte, y ofrece un análisis detallado
+                        de su
+                        obra y su legado.</li>
+                    <li>(Frida Kahlo: las fotografías de Gisèle Freund): Este libro
+                        presenta una colección de fotografías de Frida Kahlo tomadas por la fotógrafa suiza Gisèle
+                        Freund. Las
+                        imágenes ofrecen una perspectiva única de la vida y la obra de la artista.
+                    </li>
+                    <li>(Frida Kahlo: creando su propio yo): Este libro acompaña una
+                        exposición en el Museo Victoria & Albert de Londres que exploró la relación de Frida Kahlo con
+                        la moda y
+                        la forma en que su estilo personal influyó en su arte. El libro incluye fotografías y detalles
+                        de la
+                        ropa y los objetos personales de Frida Kahlo.</li>
+                    <li>(Frida: el último retrato): Este libro presenta una colección de fotografías
+                        de la artista tomadas por el fotógrafo japonés Ishiuchi Miyako. Las imágenes fueron tomadas en
+                        la casa
+                        de Frida Kahlo en Ciudad de México, donde la artista vivió y trabajó hasta su muerte.</li>
+                </ul>
+
+
+            </div>
+            <div
+                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                <h3>Música</h3>
+                <p>Además de Madonna y Red Hot Chili Peppers, Frida Kahlo también ha sido fuente de inspiración para
+                    otros músicos y bandas, como por ejemplo:</p>
+                <ul>
+                    <li>La cantante británica PJ Harvey compuso la canción "The Whores Hustle and the Hustlers Whore"
+                        inspirada en la obra de Frida Kahlo.</li>
+                    <li>La banda chilena Los Tres dedicó la canción "La torre de Babel" a Frida, haciendo referencia a
+                        su
+                        estilo de vestimenta.</li>
+                    <li> La cantante mexicana Lila Downs ha interpretado varias canciones inspiradas en la obra y vida
+                        de
+                        Frida Kahlo, como "La llorona" y "Paloma negra".</li>
+                    <li>La banda mexicana Café Tacvba ha hecho referencia a Frida Kahlo en varias canciones, como "Eres"
+                        y
+                        "Chilanga banda".</li>
+                    <li>La cantante colombiana Shakira ha mencionado a Frida Kahlo en algunas de sus canciones, como
+                        "Día
+                        especial" y "Las de la intuición".</li>
+                    <li>La cantante española Ana Belén grabó una versión de la canción "La Llorona" en su disco "Peces
+                        de
+                        Ciudad", que fue incluida en la banda sonora de la película "Frida".</li>
+                </ul>
+                <h3>Peliculas</h3>
+
+                <p>Frida Kahlo ha sido interpretada en varias películas.</p>
+                <ul>
+                    <li>"Frida" (2002) dirigida por Julie Taymor y protagonizada por Salma Hayek en el papel de Frida
+                        Kahlo. Esta
+                        película narra la vida de la artista, desde su infancia hasta su muerte, y se centra en su
+                        relación con
+                        el muralista Diego Rivera, interpretado por Alfred Molina.</li>
+                    <li>"Frida, naturaleza viva" (1983)
+                        de Paul Leduc,</li>
+                    <li>"Frida: La mujer detrás del mito" (2004) de Gabriel Santander, </li>
+                    <li>"Frida, en cuerpo y alma"(2017) de Javier Ponce Gamboa,</li>
+                    <li>"Las dos Fridas" (2019) de Ishtar Yasin.</li>
+                </ul>
+                <p>También ha habido películas
+                    documentales sobre su vida y obra</p>
+                <ul>
+                    <li>"The Life and Times of Frida Kahlo" (2005) </li>
+                    <li>"Frida Kahlo: A
+                        Ribbon Around a Bomb" (2020).
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fila" id="contacto">
+            <div class="col-12-movil-col-12-tablet-vertical-col-12-tablet-horizontal-col-12-escritorio-col-12-escritorio-xl"
+                id="frase">
+                <h2>Soy el tipo de mujer que si quiero la luna, me la bajo yo solita</h2>
+            </div>
+            <div>
+                <h3>Museo Frida Khalo</h3>
+                <link rel="stylesheet"
+                    href="https://www.google.com/maps/place/Museo+Frida+Kahlo/@19.3551805,-99.1673345,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1ffc400ba3f3b:0x6201a4f7f7ccf4a1!8m2!3d19.3551806!4d-99.1624636!16s%2Fm%2F0fq0vs1">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navega");
+            if (x.className === "fila") {
+                x.className += "visible";
+            } else {
+                x.className = "fila";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

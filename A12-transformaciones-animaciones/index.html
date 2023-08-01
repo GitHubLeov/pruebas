@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=nav, initial-scale=1.0">
+    <title>Transformaciones y animaciones</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#entradeta").click(function () {
+                $(".clica").addClass("animate");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="principal">
+
+        <header>
+            <div class="fila">
+                <div class="col-12-movil">
+                    <a href="#">Inicio</a>
+                    <h1>Actividad 12: Transformaciones y animaciones</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="fila">
+            <div class="col-12-movil">
+                <h2>Animaciones</h2>
+                El h1 tambien es una animación
+                <h2>Receta de bizcocho de yogur</h2>
+                <a id="entradeta" href="#">Clica</a>
+                <p>
+                    Las abuelas son las reinas de la cocina, ellas enseñan trucos y recetas de cocina, aunque no hay
+                    nada mejor que los platos elaborados con sus manos.
+                </p>
+                <figure class="clica">
+                    <img src="img/bizcocho.png" alt="Bizcocho recién hecho en un plato">
+                    <figcaption>Bizcocho recién hecho en un plato, con una porción cortada.</figcaption>
+                </figure>
+            </div>
+            <hr>
+            <div id="animaciones" class="fila">
+                <div id="cambiar-color" class="col-12-movil">
+                    <h2>¿Qué son las animaciones CSS?</h2>
+                    <p>Una animación permite que un elemento cambie gradualmente de un estilo a otro.
+                        Puede cambiar tantas propiedades CSS como desee, tantas veces como desee.
+                        Para usar la animación CSS, primero debe especificar algunos fotogramas clave para la animación.
+                        Los fotogramas clave contienen los estilos que tendrá el elemento en determinados momentos.</p>
+                    <h5>La regla @keyframes</h5>
+                    <p>Cuando especifica estilos CSS dentro de la @keyframes regla, la animación cambiará gradualmente
+                        del estilo actual al nuevo estilo en ciertos momentos.Para que una animación funcione, debe
+                        vincular la animación a un elemento.
+                        El siguiente ejemplo vincula la animación "example" al elemento div. La animación durará 4
+                        segundos y cambiará gradualmente el color de fondo del elemento div de "rojo" a "azul":</p>
+                    <h4>1.Añade una animación a un div de 2 segundos, de cambio de color de fondo rojo a azul.
+                    </h4>
+                    <p>Nota: Cuando finaliza la animación, vuelve a su estilo original</p>
+                    <div class="cambia-color"></div>
+                    <p> <strong>Nota:</strong> La animation-duration propiedad define cuánto tiempo debe tardar en
+                        completarse una animación.
+                        Si animation-durationno se especifica la propiedad, no se producirá ninguna animación, porque el
+                        valor predeterminado es 0s (0 segundos).</p>
+                    <p>En el ejemplo anterior, hemos especificado cuándo cambiará el estilo usando las palabras clave
+                        "desde" y "hasta" (que representa 0 % (inicio) y 100 % (completado)). También es posible
+                        utilizar porcentaje. Al usar el porcentaje, puede agregar tantos cambios de
+                        estilo como desee.El siguiente ejemplo cambiará tanto el color de fondo como la posición del
+                        elemento
+                        div cuando la animación esté completa en un 25 %, en un 50 % y nuevamente cuando la animación
+                        esté
+                        completa en un 100 %:
+                    </p>
+                    <h4>2.Añade estos keyframes a la animación anterior:</h4>
+                        
+                            <ul>
+                                <li>0% - background color de “red”, left de “0px”, a top “0px”</li>
+                                <li>25% - background color de “blue”, left de “0px”, a top “200px”</li>
+                                <li>50% - background color de “green”, left de “200px”, a top “200px”</li>
+                                <li>75% - background color de “yellow”, left de “200px”, a top “0px”</li>
+                                <li>100% - background color de “red”, left de “0px”, top a “0px” </li>
+                            </ul>
+                      
+                        
+                            <ul>
+                                <li>0% - background color de “red”, left de “0px”, a top “0px”</li>
+                                <li>25% - background color de “blue”, left de “0px”, a top “200px”</li>
+                                <li>50% - background color de “green”, left de “200px”, a top “200px”</li>
+                                <li>75% - background color de “yellow”, left de “200px”, a top “0px”</li>
+                                <li>100% - background color de “red”, left de “0px”, top a “0px” </li>
+                            </ul>
+                      
+                    
+                    <p>Nota: Cuando finaliza la animación, vuelve a su estilo original.</p>
+                    <div class="cambia-colores"></div>
+                </div>
+                <hr>
+                <div id="retrasa-animacion" class="fila">
+                    <div class="col-12-movil">
+                        <h3>Retrasar una animación</h3>
+                        <p>La animation-delay propiedad especifica un retraso para el inicio de una animación.
+                            El siguiente ejemplo tiene un retraso de 2 segundos antes de iniciar la animación:</p>
+                        <h4>3.Añade un segundo de retraso a la siguiente animación:div {
+                            width: 100px;
+                            height: 100px;
+                            position: relative;
+                            background-color: red;
+                            animation-name: example;
+                            animation-duration: 2s;
+                            }
+                            @keyframes ejemplo {
+                            0% {background-color: red; left:0px;}
+                            50% {background-color: yellow; left:200px;}
+                            100% {background-color: red; left:0px;}
+                            }
+                        </h4>
+                        <div class="retrasar-animacion"></div>
+                        <p>La propiedad animation-delay especifica un retraso para el inicio de una animación. El
+                            siguiente ejemplo tiene un retraso de 1 segundo antes de iniciar la animación:</p>
+                    </div>
+                </div>
+                <div id="repetir-animacion" class="fila">
+                    <div class="col-12-movil">
+                        <h3>Establecer cuántas veces debe ejecutarse una animación</h3>
+                        <p>La animation-iteration-countpropiedad especifica el número de veces que debe ejecutarse una animación.
+                            El siguiente ejemplo usa el valor "infinito" para hacer que la animación continúe para siempre:</p>
+                            <h4>4.Añade una propiedad para que la animación anterior se reproduzca para siempre.
+                                5?.Añade una propiedad para que la siguiente animación se reproduzca de 0% a 100% y 100% a 0% sucesivamente.</h4>
+                               <p>Nota:La propiedad animation-iteration-count se puede establecer en infinito para permitir que la animación se ejecute para siempre</p>
+                                <div class="infinito"></div>
+                    </div>
+                </div>
+                </div>   
+            </div>
+            <div id="transformaciones" class="fila">
+                <div class="col-12-movil">
+                    <h2>Transformaciones 2D</h2>
+                </div>
+                <div id="desplazar" class="fila">
+                    <div class="col-12-movil">
+                        <h3>El método translate ()</h3>
+                        <h4>1.Desplaza un div 100px a la derecha y 25px hacia abajo</h4>
+                        <p><strong>El translate()</strong> método mueve un elemento desde su posición actual (según
+                            los
+                            parámetros dados para el eje
+                            X y el eje Y).
+                            El siguiente ejemplo mueve el elemento div 100px a la derecha y 25px hacia abajo desde
+                            su
+                            posición
+                            actual:
+                        </p>
+                        <div class="boton">
+                            <p>mueve</p>
+                        </div>
+                        <div class="mover"></div>
+                    </div>
+                </div>
+                <div id="rota" class="fila">
+                    <div class="col-6-movil">
+                        <h3>El método rotate ()</h3>
+                        <h4>2.Rota un div 45 grados.</h4>
+                        <p> <strong>El rotate()</strong> método gira un elemento en el sentido de las agujas del
+                            reloj o en
+                            el sentido contrario a las agujas del reloj según un grado determinado.
+                            El siguiente ejemplo gira el elemento div en el sentido de las agujas del reloj 20
+                            grados:
+                        </p>
+                        <div class="boton">
+                            <p>rota</p>
+                        </div>
+                        <div class="rotar-derecha">
+                            <p>Rota hacia la derecha</p>
+                        </div>
+                    </div>
+                    <div class="rota col-6-movil">
+                        <p>El uso de valores negativos rotará el elemento en sentido contrario a las agujas del
+                            reloj.
+                            El siguiente ejemplo gira el elemento div en sentido contrario a las agujas del reloj 20
+                            grados::
+                        </p>
+                        <div class="boton">
+                            <p>rota</p>
+                        </div>
+                        <div class="rotar-izquierda">
+                            <p>Rota hacia la izquierda</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dimensiona" class="fila">
+                    <div class="col-6-movil">
+                        <h3>El método scale()</h3>
+                        <h4>3.Cambia las dimensiones de un div: la anchura a la mitad y la altura al doble.</h4>
+                        <p><strong>El scale()</strong> método aumenta o disminuye el tamaño de un elemento (según
+                            los
+                            parámetros
+                            dados para el ancho y alto).En este caso la anchura a la mitad y la altura al doble.
+                        </p>
+                        <div class="dimensiona"></div>
+                    </div>
+                </div>
+                <div id="sesgar" class="fila">
+                    <div class="col-6-movil">
+                        <h3>El método skew() </h3>
+                        <h4>4.<strong>Distorsiona (skew)</strong>un div 20 grados en el eje de la x y 30 grados en
+                            el eje de
+                            la
+                            y.</h4>
+                        <p>El skew()método sesga un elemento a lo largo de los ejes X e Y en los ángulos dados.
+                            El siguiente ejemplo sesga el elemento
+                            div 20 grados a lo largo del eje X y 10 grados a lo largo del eje Y:</p>
+                        <div class="normal">
+                            Este elemento div está sesgado 20 grados a lo largo del eje X y 30 grados a lo largo del
+                            eje Y.
+                        </div>
+                        <div class="sesga"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="transiciones" class="fila">
+                <div class="col-12-movil">
+                    <h2>Transiciones</h2>
+                </div>
+                <div id="pregunta-uno" class="col-6-movil">
+                    <h4>1.Añade un efecto de transición de dos segundos al siguiente div:div {
+                        width: 100px;
+                        height: 100px;
+                        background: red;
+                        }
+                        div:hover {
+                        width: 300px;
+                        }
+                    </h4>
+                    <h5>¿Cómo usar las transiciones CSS?</h5>
+                    <p>Para crear un efecto de transición, debe especificar dos cosas:
+                    <ul>
+                        <li>la propiedad CSS a la que desea agregar un efecto</li>
+                        <li>la duración del efecto</li>
+                    </ul>
+                
+                    <p>Nota: Si no se especifica la parte de duración, la transición no tendrá efecto, porque el
+                        valor
+                        predeterminado es 0.</p>
+                    <p>El siguiente ejemplo muestra un elemento rojo div de 100px * 100px. El elemento div también
+                        ha
+                        especificado un efecto de transición para la propiedad de ancho, con una duración de 2
+                        segundos:</p>
+                    <p>El efecto de transición comenzará cuando la propiedad CSS especificada (ancho) cambie de
+                        valor.</p>
+                    <p>Tenga en cuenta que cuando el cursor se aleja del elemento, volverá gradualmente a su estilo
+                        original.</p>
+                    <div class="propiedad-transicion"></div>
+                </div>
+                <div id="pregunta-dos" class="col-6-movil">
+                    <h4>2.Especifica la curva de velocidad de la transición del div anterior a “ease-in-out”.</h4>
+                    <h5>Especificar la curva de velocidad de la transición</h5>
+                    <p>La transition-timing-functionpropiedad especifica la curva de velocidad del efecto de
+                        transición.</p>
+                    <p>La propiedad Transition-timing-function puede tener los siguientes valores:</p>
+                    <ol>
+                        <li>ease-:Especifica un efecto de transición con un comienzo lento, luego rápido, luego
+                            termina
+                            lentamente (esto es predeterminado)</li>
+                        <li>linear-:Especifica un efecto de transición con la misma velocidad de principio a fin
+                        </li>
+                        <li>ease-in-:Especifica un efecto de transición con un comienzo lento</li>
+                        <li>ease-out-:Especifica un efecto de transición con un final lento</li>
+                        <li>ease-in-out-:Especifica un efecto de transición con un comienzo y un final lentos</li>
+                        <li>cubic-bezier(n,n,n,n)-:Le permite definir sus propios valores en una función
+                            cubic-bezier</li>
+                    </ol>
+                    <p>El siguiente ejemplo muestra algunas de las diferentes curvas de velocidad que se pueden
+                        utilizar</p>
+                    <div class="linear">
+                        <p>linear</p>
+                    </div>
+                    <div class="ease">
+                        <p>ease</p>
+                    </div>
+                    <div class="ease-in">
+                        <p>ease-in</p>
+                    </div>
+                    <div class="ease-out">
+                        <p>ease-out</p>
+                    </div>
+                    <div class="ease-in-out">
+                        <p>ease-in-out</p>
+                    </div>
+        
+                </div>
+                <div id="pregunta-tres" class="col-6-movil">
+                    <h4>3.Especifica un retraso de la transición del div anterior de 1.5 segundos.</h4>
+                    <h5>Retrasar el efecto de transición</h5>
+                    <p>La transition-delay () propiedad especifica un retraso (en segundos) para el efecto de
+                        transición.
+                        El siguiente ejemplo tiene un retraso de 1.5 segundo antes de comenzar:</p>
+                    <p>Pase el cursor sobre el elemento div a continuación para ver el efecto de transición:</p>
+                    <div class="retraso"></div>
+                    <p>Nota: El efecto de transición tiene un retraso de 1.5 segundo antes de comenzar.</p>
+                </div>
+                <div id="pregunta-cuatro" class="col-6-movil">
+                    <h4>4.Especifica un tiempo de transición de todos los cambios del siguiente div de 3
+                        segundos.div {
+                        width: 100px;
+                        height: 100px;
+                        background: red;
+                        }
+        
+                        div:hover {
+                        background: blue;
+                        transform: rotate(180deg);
+                        }</h4>
+                    <div class="tres-segundos"></div>
+                </div>
+                <div id="pregunta-5" class="col-6-movil">
+                    <h4>5.Especifica un tiempo de transición del div siguiente de 2 segundos, una curva de
+                        “ease-out” y un
+                        retraso de 0.6 segundos, usando la propiedad abreviada.div {
+                        width: 100px;
+                        height: 100px;
+                        background: red;
+                        transition: width 2s ease-in-out 0.5s;
+                        }
+        
+                        div:hover {
+                        width: 400px;
+                        }</h4>
+                    <div class="abreviado"></div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+</html>

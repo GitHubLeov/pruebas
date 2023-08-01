@@ -1,0 +1,408 @@
+
+.primario{ color: #D9C5D4; }
+.secundario { color: #9F85A6; }
+.terciario { color: #5C4673; }
+.cuatro { color: #9BBFB5; }
+.quinto { color: #F2F1DF; }
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inconsolata', monospace;
+}
+h1{
+    font-size: 70px;
+    margin: 0;
+    padding: 47px 0;
+    background-size: cover;
+}
+header h1 {
+   background-image:url(img/header.jpg);
+    background-position: 0 5%;
+    color: #5C4673;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+header {
+    background-color:  #9BBFB5;
+}
+
+h3 {
+    font-size: 30px;
+    color:#9BBFB5;
+}
+h4 {
+    font-size:  20px;
+    color:#5C4673;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a:hover {
+    color: #ba3925;
+}
+a, footer a  {
+    font-weight: bold;
+}
+.resaltado{
+    font-weight: bolder;
+}
+/* --------Structure-------- */
+section {
+    display: flex;
+    flex-wrap: wrap;   
+}
+.container {
+    max-width: 90%;
+    width: 1140px;
+    margin: 0em auto;
+}
+.borde {
+	/* margin-left: 10px; */
+	border-left: 2px solid black;
+}
+.section-secondary {
+    background-color: #f2f2f2;
+}
+
+img {
+	width: 100%;
+	margin: 50px auto;
+	/* display: block; */
+}
+/* --------Nav--------- */
+nav ul {
+    padding: 10px 30px;
+    background-color:#9F85A6;
+    
+}
+nav ul, footer ul {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0;
+}
+nav li, footer li {
+    list-style-type: none;
+    margin-right: 40px;
+    display: inline;
+}
+nav a, footer a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 0;
+    display: inline-block;
+    text-transform: capitalize;
+   
+}
+nav a:hover, footer a:hover {
+    color:#D9C5D4;
+}
+
+/* --------Footer------------ */
+footer ul {
+    text-align: center;
+    padding: 25px;
+}
+
+/*-------------CONSULTA DE MEDIOS----------*/
+@media screen and (min-width:576px) {
+    #principal {
+        width: 540px;
+    }
+
+    .col-12-movil {
+
+        width: 100%;
+
+    }
+
+    .col-11-movil {
+        width: 91.666666%;
+    }
+
+    .col-10-movil {
+        width: 83.333%;
+    }
+
+    .col-9-movil {
+        width: 75%;
+
+    }
+
+    .col-8-movil {
+        width: 66.666666%;
+    }
+
+    .col-7-movil {
+        width: 58.333333%;
+    }
+
+    .col-6-movil {
+        width: 50%;
+    }
+
+    .col-5-movil {
+        width: 41.666666%;
+
+    }
+
+    .col-4-movil {
+        width: 33.333333%;
+    }
+
+    .col-3-movil {
+        width: 25%;
+    }
+
+    .col-2-movil {
+        width: 16.666666%;
+    }
+
+    .col-1-movil {
+        width: 8.333333%;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    #principal {
+        width: 720px;
+    }
+
+    .col-12-tablet-vertical {
+
+        width: 100%;
+
+    }
+
+    .col-11-tablet-vertical {
+        width: 91.666666%;
+    }
+
+    .col-10-tablet-vertical {
+        width: 83.333%;
+    }
+
+    .col-9-tablet-vertical {
+        width: 75%;
+
+    }
+
+    .col-8-tablet-vertical {
+        width: 66.666666%;
+    }
+
+    .col-7-tablet-vertical {
+        width: 58.333333%;
+    }
+
+    .col-6-tablet-vertical {
+        width: 50%;
+    }
+
+    .col-5-tablet-vertical {
+        width: 41.666666%;
+
+    }
+
+    .col-4-tablet-vertical {
+        width: 33.333333%;
+    }
+
+    .col-3-tablet-vertical {
+        width: 25%;
+    }
+
+    .col-2-tablet-vertical {
+        width: 16.666666%;
+    }
+
+    .col-1-tablet-vertical {
+        width: 8.333333%;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    #principal {
+        width: 960px;
+    }
+
+    .col-12-tablet-horizontal {
+
+        width: 100%;
+
+    }
+
+    .col-11-tablet-horizontal {
+        width: 91.666666%;
+    }
+
+    .col-10-tablet-horizontal {
+        width: 83.333%;
+    }
+
+    .col-9-tablet-horizontal {
+        width: 75%;
+
+    }
+
+    .col-8-tablet-horizontal {
+        width: 66.666666%;
+    }
+
+    .col-7-tablet-horizontal {
+        width: 58.333333%;
+    }
+
+    .col-6-tablet-horizontal {
+        width: 50%;
+    }
+
+    .col-5-tablet-horizontal {
+        width: 41.666666%;
+
+    }
+
+    .col-4-tablet-horizontal {
+        width: 33.333333%;
+    }
+
+    .col-3-tablet-horizontal {
+        width: 25%;
+    }
+
+    .col-2-tablet-horizontal {
+        width: 16.666666%;
+    }
+
+    .col-1-tablet-horizontal {
+        width: 8.333333%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #principal {
+        width: 1140px;
+    }
+
+    .col-12-escritorio {
+
+        width: 100%;
+
+    }
+
+    .col-11-escritorio {
+        width: 91.666666%;
+    }
+
+    .col-10-escritorio {
+        width: 83.333%;
+    }
+
+    .col-9-escritorio {
+        width: 75%;
+
+    }
+
+    .col-8-escritorio {
+        width: 66.666666%;
+    }
+
+    .col-7-escritorio {
+        width: 58.333333%;
+    }
+
+    .col-6-escritorio {
+        width: 50%;
+    }
+
+    .col-5-escritorio {
+        width: 41.666666%;
+
+    }
+
+    .col-4-escritorio {
+        width: 33.333333%;
+    }
+
+    .col-3-escritorio {
+        width: 25%;
+    }
+
+    .col-2-escritorio {
+        width: 16.666666%;
+    }
+
+    .col-1-escritorio {
+        width: 8.333333%;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #principal {
+        width: 1320px;
+    }
+
+
+    .col-12-escritorio-xl {
+
+        width: 100%;
+
+    }
+
+    .col-11-escritorio-xl {
+        width: 91.666666%;
+    }
+
+    .col-10-escritorio-xl {
+        width: 83.333%;
+    }
+
+    .col-9-escritorio-xl {
+        width: 75%;
+
+    }
+
+    .col-8-escritorio-xl {
+        width: 66.666666%;
+    }
+
+    .col-7-escritorio-xl {
+        width: 58.333333%;
+    }
+
+    .col-6-escritorio-xl {
+        width: 50%;
+    }
+
+    .col-5-escritorio-xl {
+        width: 41.666666%;
+
+    }
+
+    .col-4-escritorio-xl {
+        width: 33.333333%;
+    }
+
+    .col-3-escritorio-xl {
+        width: 25%;
+    }
+
+    .col-2-escritorio-xl {
+        width: 16.666666%;
+    }
+
+    .col-1-escritorio-xl {
+        width: 8.333333%;
+    }
+}

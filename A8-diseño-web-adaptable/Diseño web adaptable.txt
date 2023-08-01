@@ -1,0 +1,71 @@
+El diseño web adaptable
+
+1.Introducción
+El diseño web adaptable (también diseño web adaptativo o responsivo; este último calco del inglés responsive web design), es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web (https://es.wikipedia.org/wiki/P%C3%A1gina_web) al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en multitud de dispositivos: 
+·tabletas
+·teléfonos inteligentes
+·libros electrónicos
+·portátiles
+·PC... 
+Además, aún dentro de cada tipo, cada dispositivo tiene sus características concretas: 
+·Tamaño de pantalla
+·Resolución
+·Potencia de CPU
+·Sistema operativo 
+·Capacidad de memoria... 
+Esta tecnología pretende que con un único diseño web, todo se vea correctamente en cualquier dispositivo.
+
+1.1.Creador
+El diseñador y autor norteamericano Ethan Marcotte creó y difundió esta técnica a partir de una serie de artículos en A List Apart, una publicación en línea especializada en diseño (https://es.wikipedia.org/wiki/Dise%C3%B1o_web) y desarrollo web (https://es.wikipedia.org/wiki/Desarrollo_web), idea que luego extendería en su libro Responsive Web Design.
+
+2.Origen del diseño web adaptable
+Tanto la idea como el propósito del diseño web adaptable fueron previamente discutidos y descritos por el World Wide Web Consortium (W3C)(https://www.w3.org/) en julio de 2008 en su recomendación Mobile Web Best Practices bajo el subtítulo «One Web».1
+Según las propias palabras de la W3C:
+"The W3C mission is to lead the World Wide Web to its full potential by developing protocols and guidelines that ensure the long-term growth of the Web. Below we discuss important aspects of this mission, all of which further W3C's vision of One Web."
+
+Dicha recomendación, aunque específica para dispositivos móviles, puntualiza que está hecha en el contexto de One Web, y que por lo tanto engloba no solo la experiencia de navegación en dispositivos móviles sino también en dispositivos de mayor resolución de pantalla como dispositivos de sobremesa.
+
+2.1 El concepto de One Web 
+Esta idea hace referencia a la filosofía de construir una ‘Web para Todos’ (Web for All) y accesible desde cualquier tipo de dispositivo (Web on Everything).
+
+2.2 Múltiples pantallas
+Hoy en día, la variedad de dispositivos existentes en el mercado ha provocado que la información disponible no sea accesible desde todos los dispositivos, o bien sea accesible pero con una experiencia de navegación muy pobre. 
+
+3.Ventajas
+
+El uso de dispositivos móviles ha aumentado notablemente en los años 2010, en particular, el uso de tabletas y teléfonos inteligentes. La evolución de la navegación en Internet ha ido a la par, y ello ha popularizado la navegación en Internet mediante una creciente variedad de dispositivos y resoluciones de pantalla, lo que a su vez ha creado unas necesidades de adaptar la experiencia de la navegación web a ellos.
+
+3.1.Economía en el código 
+Con una sola versión en HTML (https://developer.mozilla.org/es/docs/Web/HTML) y CSS (https://developer.mozilla.org/en-US/docs/Web/CSS) se pueden cubrir todas las resoluciones de pantalla, con lo que el sitio web estará optimizado para distintos dispositivos y resoluciones de pantalla. Esto mejora la experiencia de usuario a diferencia de lo que ocurre, por ejemplo, con sitios web de ancho fijo cuando se acceden desde dispositivos móviles. De esta forma se reducen los costos de creación y mantenimiento cuando el diseño de las pantallas es similar entre dispositivos de distintos tamaños. También evita tener que desarrollar aplicaciones ad-hoc para cada sistema operativo móvil: iOS, Android, Windows Phone, BlackBerry OS, etcétera.
+
+3.2.Ventajas en tu SEO
+Desde el punto de vista del posicionamiento en buscadores (https://es.wikipedia.org/wiki/Posicionamiento_en_buscadores), aparecería una única URL (https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme) en los resultados de búsqueda, con lo cual se ahorrarían múltiples redirecciones y los fallos que se derivan de estas. También se evitarían errores al acceder al sitio web en concreto desde los llamados social links, es decir, desde enlaces que los usuarios comparten en medios sociales tales como Facebook o Twitter, y que pueden acabar en error dependiendo desde qué dispositivo se copió y desde qué dispositivo se intenta acceder a ese enlace.
+
+3.3.Mejor para los usuarios
+A la hora de visualizar Google tu página responsiva, puntúa mejor su posicionamiento web. Esto se debe a que Google piensa en los usuarios y cómo van a poder visualizar de mejor forma las páginas web. 
+
+4.Funcionamiento
+
+El diseño web adaptable es posible gracias al uso de un sistema de rejilla fluida basada en proporciones, imágenes flexibles y consultas de medios (media queries) (https://es.wikipedia.org/wiki/Media_query) de CSS3.
+
+4.1.Las consultas de medios
+Estas son una extensión de la regla @media que se incluye en la hoja de estilos para indicar al documento HTML cómo debe comportarse en diferentes medios (pantallas, impresoras, reproductor de voz), orientación, resolución, espacio de color, relación de aspecto, etc.5
+
+4.2.Sistemas de columnas
+Para entenderlo mejor, los diseños de las páginas web, al igual que los periódicos y las revistas, están basados en columnas. Con la filosofía del diseño adaptativo, si una web se muestra con la resolución habitual de un PC (ancho igual o mayor a 1028px) muestra el contenido en 5 columnas, para una tableta (con un ancho superior a 800px) necesitaría sólo 4 y, en el caso de un teléfono inteligente (entre 320px y 480px), las columnas mostradas deberían ser 3.
+
+4.3.Adaptarse, adaptarse, adaptarse
+El diseño adaptable debe fluir con una adaptación constante del tamaño de los gráficos y las estructuras que componen un sitio web dentro de los diferentes dispositivos y tamaños de pantalla, considerando de forma automática la orientación (retrato o apaisada) en la que se visualizan los contenidos. 
+
+
+--------Imágenes----------
+Diseno-web-responsive-design.jpg
+Diseño web adaptativo (adaptable) o Responsive Web Design (RWD).
+
+sistema-columnas.png
+Ejemplo de diseño web basado en un sistema de quince columnas.
+
+media-queries.png
+Sintaxis de consultas de medios pensadas para aplicarse en diferentes anchos de pantalla.
+
+

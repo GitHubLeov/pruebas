@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-weight: bold;
+font-size: 20px;
+}
+
+/*--------ESTRUCTURA--------*/
+#principal {
+    width: 1024px;
+    margin: auto;
+
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+.fila > div {
+    
+margin: 5px 0;
+    padding: 15px;
+    border: 3px solid gray;
+    background-color: rgb(195, 208, 109);
+    border-radius: 5px;
+    color: darkblue;
+}
+
+
+
+.col-12 {
+    width: 100%;
+}
+
+.col-11 {
+    width: 91.666666%;
+}
+
+.col-10 {
+    width: 83.333%;
+}
+.col-9 {
+    width: 75%;
+
+}
+.col-8 {
+    width: 66.666666%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+.col-6 {
+    width: 50%;
+}
+
+.col-5 {
+    width: 41.666666%;
+
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.666666%;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+
+.fila .desplaza-1{
+    margin-left: 8.333333%;
+}
+
+
+.centrar-horizontal {
+    justify-content: center;
+}

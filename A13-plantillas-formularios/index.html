@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+
+<body>
+    <div id="principal" class="container">
+        <header>
+            <h1>A list Apart</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="style-guides.html">Creating style guides</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Write for us</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="fila">
+                <div
+                    class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl">
+                    <h2>¡Bienvenidos a nuestra newsletter!</h2>
+                    <p>En este espacio, podrá recibir información que se adapte a sus intereses y necesidades. Pero
+                        antes de empezar, necesitamos conocer un poco más sobre ti para asegurarnos de que te enviaremos
+                        contenido relevante y útil.</p>
+                    <p>A continuación, te pedimos que nos proporciones algunos datos para que podamos
+                        personalizar tu experiencia:</p>
+                </div>
+            </div>
+            <div class="fila section-secondary">
+                <div
+                    class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl">
+                    <form action="newsleter">
+                        <div id="datos-personales" class="fila">
+                            <div
+                                class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl">
+                                <fieldset>
+                                    <legend>
+                                        Datos personales
+                                    </legend>
+                                    <div
+                                        class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl">
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" id="datos-personales" name="nombre" value="">
+                                        <label for="apellidos">Apellidos:</label>
+                                        <input type="text" id="datos-personales" name="apellidos" value="">
+                                        <label for="direccion">Dirección:</label>
+                                        <input type="text" id="datos-personales" name="direccion" value="">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="datos-personales" name="email" value="">
+                                        <label for="telefono">Teléfono:</label>
+                                        <input type="text" id="datos-personales" name="telefono" value="">
+                                        <label for="sexo">Sexo:</label>
+                                        <input type="text" id="datos-personales" name="sexo" value="">
+                                        <label for="genero-select">Sexo:</label>
+                                        <select name="genero" id="genero-select">
+                                            <option value="">Elija una opción</option>
+                                            <option value="mujer">Mujer</option>
+                                            <option value="hombre">Hombre</option>
+                                            <option value="binario">Binario</option>
+                                            <option value="otro">Otro</option>
+                                            <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                                        </select>
+                                        <label>Fecha de nacimiento:
+                                            <input type="date" name="nacimiento" /></label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div id="info" class="fila">
+                            <div
+                                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                                <fieldset>
+                                    <legend>Que tipo de información te gustaría recibir:</legend>
+                                    <div>
+                                        <input type="checkbox" id="libros-ilustrados" name="libros-ilustrados" checked>
+                                        <label for="libros-ilustrados">Libros ilustrados</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="horns" name="infantil-juvenil">
+                                        <label for="infantil-juvenil">Infantil-juvenil</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="revistas-de-viajes" name="revistas-de-viajes">
+                                        <label for="revistas-de-viajes">Revistas de viajes</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="cocina" name="cocina">
+                                        <label for="cocina">Cocina</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="novela-gráfica-comics" name="novela-gráfica-comics">
+                                        <label for="novela-gráfica-Comics">Novela gráfica-Comics</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="narativa" name="narrativa">
+                                        <label for="narrativa">Narrativa</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="todos" name="todos">
+                                        <label for="todos">Todos</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div
+                                class="col-5-movil col-5-tablet-vertical col-5-tablet-horizontal col-5-escritorio col-5-escritorio-xl">
+                                <fieldset>
+                                    <legend>Con qué periodicidad querrías recibir esta información:</legend>
+                                    <div>
+                                        <input type="radio" id="semanal" name="periodicidad" value="semanal">
+                                        <label for="semanal">Semanal</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="quincenal" name="periodicidad" value="quincenal">
+                                        <label for="quincenal">Quincenal</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="trimestral" name="periodicidad" value="trimestral">
+                                        <label for="trimestral">Trimestral</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="anual" name="periodicidad" value="anual">
+                                        <label for="anual">Anual</label>
+                                    </div>
+                                </fieldset>
+
+                            </div>
+                            <div
+                                class="col-6-movil col-6-tablet-vertical col-6-tablet-horizontal col-6-escritorio col-6-escritorio-xl">
+                                <fieldset>
+                                    <legend>Elige un opción de cuánto te gustaria que te costará la
+                                        suscripción de El Magazine para que te lleve a casa:</legend>
+                                    <div>
+                                        <input type="radio" id="0€" name="suscripcion" value="gratis" checked>
+                                        <label for="gratis">Gratis</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="1€" name="suscripcion" value="1€">
+                                        <label for="1€">1€</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="5€" name="suscripcion" value="5€">
+                                        <label for="5€">5€</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="15€" name="suscripcion" value="15€">
+                                        <label for="15€">15€</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="20€" name="suscripcion" value="20€">
+                                        <label for="20€">20€</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div
+                                class="col-5-movil col-5-tablet-vertical col-5-tablet-horizontal col-5-escritorio col-5-escritorio-xl">
+                                <fieldset>
+                                    <div>
+                                        <h4>Escribe tus comentarios y/o sugerencias:</h4>
+                                        <textarea name="comentarios-sugerencias" id="comentarios-sugerencias" cols="30"
+                                            rows="10"></textarea>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div id="politica" class="fila">
+                            <div
+                                class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl">
+                                <fieldset>
+                                    <div>
+                                        <label for="acepta">Acepta nuestra politica de privacidad</label>
+                                        <input type="radio" id="acepta" name="drone" value="acepta" checked>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div id="boton" class="fila">
+                            <div
+                                class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl">
+                                <fieldset>
+                                    <div>
+                                        <input class="favorite styled" type="button" value="Envia">
+                                        <input class="favorite styled" type="button" value="Restablecer">
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="fila">
+                    <div class="col-12-movil col-12-tablet-vertical col-12-tablet-horizontal col-12-escritorio col-12-escritorio-xl">
+                        <p> <strong>Gracias</strong> por tomarte el tiempo de proporcionarnos esta información. Esperamos poder ofrecerte
+                            un newsletter personalizado que se adapte a tus necesidades y te sea de gran utilidad.</p>
+                         <h3>¡Gracias por confiar en nosotros!</h3>   
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">About</a>
+                </li>
+                <li><a href="#">Authors</a></li>
+                <li><a href="#">Masthead</a></li>
+                <li><a href="">Style Guide</a></li>
+                <li><a href="#">Style guide</a></li>
+                <li><a href="#">Sponsorships</a></li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>

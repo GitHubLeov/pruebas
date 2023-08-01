@@ -1,0 +1,683 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: 'Inconsolata', monospace;
+}
+
+#principal {
+    margin: auto;
+    width: 100%;
+    border: 2px solid;
+    overflow: hidden;
+
+}
+
+hr {
+    border: red;
+    border-top: 1px solid blue;
+    margin: 20px 0;
+  }
+  
+img {
+    width: 100%;
+
+}
+
+h1 {
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: visible;
+}
+
+.a:hover+h1 {
+    animation-name: visible;
+}
+.boton {
+    background-color: aquamarine;
+    width: 60px;
+    height: 60px;
+    color: white;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.clica {
+    transform: translateX(120%);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.animate {
+    animation-name: entra-derecha;
+}
+@keyframes entra-derecha {
+    0% {
+        transform: translateX(120%); opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0%);  opacity: 1;
+    }
+}
+/*------------------Cambia un color------------------*/
+.cambia-color{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: cambia-color;
+    animation-duration: 2s;
+  }
+  @keyframes cambia-color {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }
+ 
+/*------------------Cambia varios colores------------------*/  
+  .cambia-colores{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: cambia-colores;
+    animation-duration: 4s;
+  }
+  
+  @keyframes cambia-colores {
+    0%   {
+        background-color: red; left: 0px; top: 0px;
+    }
+    25%  {
+        background-color:blue; left: 0px; top: 200px;
+    }
+    50%  {
+        background-color:green; left: 200px; top: 200px;
+    }
+    75% {
+        background-color: yellow; left: 200px; top: 0px;
+    
+    }
+    100% {
+        background-color: blueviolet; left: 0px; top: 0px;}
+  }
+
+/*---------Retrasar animación-------------*/
+.retrasar-animacion {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: retrasar-animacion;
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+  @keyframes retrasar-animacion {
+    0%   {
+        background-color:red; left:0px;}
+    
+    50%  {
+        background-color:yellow; left:200px;}
+   
+    100% {
+        background-color:red; left:0px;}
+  } 
+
+/*-----------número de veces que debe ejecutarse una animación. En este caso infinito---------  */
+.infinito{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: infinito;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes infinito {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:blue; left:0px; top:200px;}
+    50%  {background-color:green; left:200px; top:200px;}
+    75%  {background-color:yellow; left:200px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+/*--------Desplazar (mover)------*/
+.mover {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+
+.boton:hover+.mover {
+    transform: translate(100px, 25px);
+}
+
+/*--------rotar------*/
+.rotar-derecha {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.boton:hover+.rotar-derecha {
+    transform: rotate(20deg);
+}
+
+.rotar-izquierda {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.boton:hover+.rotar-izquierda {
+    transform: rotate(-20deg);
+}
+
+/*------Dimensiona--------*/
+.dimensiona {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(0.5, 2);
+}
+
+/*-------sesgar------*/
+.sesga {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.normal {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.sesga {
+    transform: skew(20deg, 30deg);
+}
+
+/*-------Propiedad-transicion-------*/
+.propiedad-transicion {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+.propiedad-transicion:hover {
+    width: 300px;
+}
+
+/*-------Curva de velocidad de la transición--------*/
+
+.linear {
+    transition-timing-function: linear;
+    width: 100px;
+    height: 100px;
+    background: rgb(247, 196, 247);
+    transition: width 2s;
+}
+.linear:hover {
+    width: 300px;
+  }
+.ease {
+    transition-timing-function: ease;
+    width: 100px;
+    height: 100px;
+    background: rgb(190, 190, 249);
+    transition: width 2s;
+}
+.ease:hover {
+    width: 300px;
+  }
+.ease-in {
+    transition-timing-function: ease-in;
+    width: 100px;
+    height: 100px;
+    background: rgb(254, 254, 192);
+    transition: width 2s;
+}
+.ease-in:hover {
+    width: 300px;
+  }
+.ease-out {
+    transition-timing-function: ease-out;
+    width: 100px;
+    height: 100px;
+    background: rgb(220, 247, 193);
+    transition: width 2s;
+}
+.ease-out:hover {
+    width: 300px;
+  }
+
+
+.ease-in-out{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+  }
+.ease-in-out:hover {
+    width: 300px;
+  }
+/*-------Retraso de la transición-------- */
+.retraso {
+    width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+    transition-delay: 1.5s;
+
+}
+.retraso:hover {
+    width: 300px;
+  }
+
+/*-----------retraso------------------ */
+.restraso {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s;
+    transition-delay: 1.5s;
+  }
+.retraso:hover {
+    width: 300px;
+  } 
+
+/*----------------------------------- */
+.tres-segundos {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s, height 3s, transform 3s;
+  }
+.tres-segundos:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+    background-color: blue;
+  } 
+
+/*---------------------Abreviado-------------------*/
+.abreviado {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: width 2s ease-in-out 0.6s;    
+}
+
+.abreviado:hover {
+    width: 400px;
+}
+
+
+/*------animaciones------*/
+/* h1 {
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: visible;sesga
+}
+.a:hover + h1 {
+    animation-name: visible;
+}
+@keyframes visible {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  } */
+
+/*-----------Sistema-columnas-------------------- */
+
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="col-"] {
+    width: 100%;
+    padding: 10px;
+}
+
+
+/*-----------Sistema-columnas-------------------- */
+
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="col-"] {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+/*-------------CONSULTA DE MEDIOS----------*/
+@media screen and (min-width:576px) {
+    #principal {
+        width: 540px;
+    }
+
+    .col-12-movil {
+
+        width: 100%;
+
+    }
+
+    .col-11-movil {
+        width: 91.666666%;
+    }
+
+    .col-10-movil {
+        width: 83.333%;
+    }
+
+    .col-9-movil {
+        width: 75%;
+
+    }
+
+    .col-8-movil {
+        width: 66.666666%;
+    }
+
+    .col-7-movil {
+        width: 58.333333%;
+    }
+
+    .col-6-movil {
+        width: 50%;
+    }
+
+    .col-5-movil {
+        width: 41.666666%;
+
+    }
+
+    .col-4-movil {
+        width: 33.333333%;
+    }
+
+    .col-3-movil {
+        width: 25%;
+    }
+
+    .col-2-movil {
+        width: 16.666666%;
+    }
+
+    .col-1-movil {
+        width: 8.333333%;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    #principal {
+        width: 720px;
+    }
+
+    .col-12-tablet-vertical {
+
+        width: 100%;
+
+    }
+
+    .col-11-tablet-vertical {
+        width: 91.666666%;
+    }
+
+    .col-10-tablet-vertical {
+        width: 83.333%;
+    }
+
+    .col-9-tablet-vertical {
+        width: 75%;
+
+    }
+
+    .col-8-tablet-vertical {
+        width: 66.666666%;
+    }
+
+    .col-7-tablet-vertical {
+        width: 58.333333%;
+    }
+
+    .col-6-tablet-vertical {
+        width: 50%;
+    }
+
+    .col-5-tablet-vertical {
+        width: 41.666666%;
+
+    }
+
+    .col-4-tablet-vertical {
+        width: 33.333333%;
+    }
+
+    .col-3-tablet-vertical {
+        width: 25%;
+    }
+
+    .col-2-tablet-vertical {
+        width: 16.666666%;
+    }
+
+    .col-1-tablet-vertical {
+        width: 8.333333%;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    #principal {
+        width: 960px;
+    }
+
+    .col-12-tablet-horizontal {
+
+        width: 100%;
+
+    }
+
+    .col-11-tablet-horizontal {
+        width: 91.666666%;
+    }
+
+    .col-10-tablet-horizontal {
+        width: 83.333%;
+    }
+
+    .col-9-tablet-horizontal {
+        width: 75%;
+
+    }
+
+    .col-8-tablet-horizontal {
+        width: 66.666666%;
+    }
+
+    .col-7-tablet-horizontal {
+        width: 58.333333%;
+    }
+
+    .col-6-tablet-horizontal {
+        width: 50%;
+    }
+
+    .col-5-tablet-horizontal {
+        width: 41.666666%;
+
+    }
+
+    .col-4-tablet-horizontal {
+        width: 33.333333%;
+    }
+
+    .col-3-tablet-horizontal {
+        width: 25%;
+    }
+
+    .col-2-tablet-horizontal {
+        width: 16.666666%;
+    }
+
+    .col-1-tablet-horizontal {
+        width: 8.333333%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #principal {
+        width: 1140px;
+    }
+
+    .col-12-escritorio {
+
+        width: 100%;
+
+    }
+
+    .col-11-escritorio {
+        width: 91.666666%;
+    }
+
+    .col-10-escritorio {
+        width: 83.333%;
+    }
+
+    .col-9-escritorio {
+        width: 75%;
+
+    }
+
+    .col-8-escritorio {
+        width: 66.666666%;
+    }
+
+    .col-7-escritorio {
+        width: 58.333333%;
+    }
+
+    .col-6-escritorio {
+        width: 50%;
+    }
+
+    .col-5-escritorio {
+        width: 41.666666%;
+
+    }
+
+    .col-4-escritorio {
+        width: 33.333333%;
+    }
+
+    .col-3-escritorio {
+        width: 25%;
+    }
+
+    .col-2-escritorio {
+        width: 16.666666%;
+    }
+
+    .col-1-escritorio {
+        width: 8.333333%;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #principal {
+        width: 1320px;
+    }
+
+
+    .col-12-escritorio-xl {
+
+        width: 100%;
+
+    }
+
+    .col-11-escritorio-xl {
+        width: 91.666666%;
+    }
+
+    .col-10-escritorio-xl {
+        width: 83.333%;
+    }
+
+    .col-9-escritorio-xl {
+        width: 75%;
+
+    }
+
+    .col-8-escritorio-xl {
+        width: 66.666666%;
+    }
+
+    .col-7-escritorio-xl {
+        width: 58.333333%;
+    }
+
+    .col-6-escritorio-xl {
+        width: 50%;
+    }
+
+    .col-5-escritorio-xl {
+        width: 41.666666%;
+
+    }
+
+    .col-4-escritorio-xl {
+        width: 33.333333%;
+    }
+
+    .col-3-escritorio-xl {
+        width: 25%;
+    }
+
+    .col-2-escritorio-xl {
+        width: 16.666666%;
+    }
+
+    .col-1-escritorio-xl {
+        width: 8.333333%;
+    }
+}
